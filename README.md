@@ -68,23 +68,23 @@ Asus Vivobook Pro 14X OLED Opencore EFI and some info for running macOS Ventura 
 
 ## What's Working
 
-| Item            | Status | Notes                                                                                                       |
-| --------------- | ------ | ----------------------------------------------------------------------------------------------------------- |
-| CPU             | ✅     | AMD Vanilla Kernel Patches ([Modify according to yours Core Count](https://github.com/AMD-OSX/AMD_Vanilla)) |
-| iGPU            | ✅     | [NootedRed](https://github.com/NootInc/NootedRed)                                                           |
-| HDMI A/V out    | ✅     |                                                                                                             |
-| USB             | ✅     |                                                                                                             |
-| Keyboard        | ✅     | Voodoops2controller Kext                                                                                    |
-| Audio           | ✅     | AppleALC kext working with layout-id 12                                                                     |
-| Intel WIFI      | ✅     | AirportItlwm Kext                                                                                           |
-| Bluetooth       | ✅     | IntelBluetoothFirmware and BlueToolFixup Kext                                                               |
-| Battery         | ✅     | VoodooBatteryStatus Kext                                                                                    |
-| Shutdown/Reboot | ✅     |                                                                                                             |
+| Item            | Status | Notes                                                                                                                                    |
+| --------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| CPU             | ✅     | AMD Vanilla Kernel Patches ([Modify according to yours Core Count](https://github.com/AMD-OSX/AMD_Vanilla))                              |
+| iGPU            | ✅     | [NootedRed](https://github.com/NootInc/NootedRed) (Use [Smokeless_UMAF](https://github.com/DavidS95/Smokeless_UMAF) to update VRAM size) |
+| HDMI A/V out    | ✅     |                                                                                                                                          |
+| USB             | ✅     |                                                                                                                                          |
+| Trackpad        | ✅     | VoodooI2C and VoodooI2CHID Kext                                                                                                          |
+| Keyboard        | ✅     | Voodoops2controller Kext                                                                                                                 |
+| Audio           | ✅     | AppleALC kext working with layout-id 12                                                                                                  |
+| Intel WIFI      | ✅     | AirportItlwm Kext                                                                                                                        |
+| Bluetooth       | ✅     | IntelBluetoothFirmware and BlueToolFixup Kext                                                                                            |
+| Battery         | ✅     | SMCBatteryManager Kext                                                                                                                   |
+| Shutdown/Reboot | ✅     |                                                                                                                                          |
 
 ## What's Not Working
 
 | Item               | Status | Notes                         |
 | ------------------ | ------ | ----------------------------- |
-| Trackpad           | ❌     | No Kext compatible found      |
 | Brightness Control | ❌     | No Kext/SSDT compatible found |
-| Sleep              | \_     | Not tested yet                |
+| Sleep              | ❌     | Sleep Wake failure            |
