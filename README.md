@@ -78,7 +78,8 @@ Asus Vivobook Pro 14X OLED Opencore EFI and some info for running macOS Ventura 
 | Keyboard        | ✅     | Voodoops2controller Kext                                                                                                                 |
 | Audio           | ✅     | AppleALC kext working with layout-id 12                                                                                                  |
 | Intel WIFI      | ✅     | AirportItlwm Kext                                                                                                                        |
-| Bluetooth       | ✅     | IntelBluetoothFirmware and BlueToolFixup Kext                                                                                            |
+| Bluetooth       | ✅     | IntelBluetoothFirmware and BlueToolFixup Kext (Don't disable XHC1 controller)                                                            |
+| Webcam          | ✅     | (Don't disable XHC1 controller)                                                                                                          |
 | Battery         | ✅     | SMCBatteryManager Kext                                                                                                                   |
 | Shutdown/Reboot | ✅     |                                                                                                                                          |
 
