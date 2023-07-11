@@ -1,6 +1,6 @@
 # macOS on Asus Vivobook Pro 14X OLED - M7400QC - Ryzen 5600H
 
-Asus Vivobook Pro 14X OLED Opencore EFI and some info for running macOS Ventura (Monterey plist option added).
+Asus Vivobook Pro 14X OLED Opencore EFI and some info for running macOS Ventura.
 
 ## Specifications
 
@@ -43,7 +43,7 @@ Asus Vivobook Pro 14X OLED Opencore EFI and some info for running macOS Ventura 
         </tr>
         <tr>
             <td>LCD Panel</td>
-            <td>14 2.8K OLED 90Hz</td>
+            <td>14" 2.8K OLED 90Hz</td>
         </tr>
         <tr>
             <td>Bios Version</td>
@@ -72,20 +72,21 @@ Asus Vivobook Pro 14X OLED Opencore EFI and some info for running macOS Ventura 
 | --------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | CPU             | ✅     | AMD Vanilla Kernel Patches ([Modify according to yours Core Count](https://github.com/AMD-OSX/AMD_Vanilla))                              |
 | iGPU            | ✅     | [NootedRed](https://github.com/NootInc/NootedRed) (Use [Smokeless_UMAF](https://github.com/DavidS95/Smokeless_UMAF) to update VRAM size) |
-| HDMI A/V out    | ✅     |                                                                                                                                          |
 | USB             | ✅     |                                                                                                                                          |
 | Trackpad        | ✅     | VoodooI2C and VoodooI2CHID Kext                                                                                                          |
 | Keyboard        | ✅     | Voodoops2controller Kext                                                                                                                 |
 | Audio           | ✅     | AppleALC kext working with layout-id 12                                                                                                  |
 | Intel WIFI      | ✅     | AirportItlwm Kext                                                                                                                        |
-| Bluetooth       | ✅     | IntelBluetoothFirmware and BlueToolFixup Kext (Don't disable XHC1 controller)                                                            |
+| Bluetooth       | ✅     | IntelBluetoothFirmware and BlueToolFixup Kext (Don't disable XHC1 controller and have to map USB)                                        |
 | Webcam          | ✅     | (Don't disable XHC1 controller)                                                                                                          |
 | Battery         | ✅     | SMCBatteryManager Kext                                                                                                                   |
 | Shutdown/Reboot | ✅     |                                                                                                                                          |
+| Sleep           | ✅     | Works after disabling dGPU                                                                                                               |
+| Dual Boot       | ✅     | Shutdown Windows completely before booting into OC                                                                                       |
 
 ## What's Not Working
 
 | Item               | Status | Notes                         |
 | ------------------ | ------ | ----------------------------- |
 | Brightness Control | ❌     | No Kext/SSDT compatible found |
-| Sleep              | ❌     | Sleep Wake failure            |
+| HDMI A/V out       | -      | Not tested yet                |
